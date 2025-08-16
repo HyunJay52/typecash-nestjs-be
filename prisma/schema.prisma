@@ -7,126 +7,159 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model ad_provider_admob_logs {
-  id                    Int           @id
-  ad_watch_log_id       Int
-  ad_unit_id            String?       @db.VarChar(100)
-  response_id           String?       @db.VarChar(100)
-  ad_source_name        String?       @db.VarChar(100)
-  ad_source_id          String?       @db.VarChar(100)
-  ad_source_instance_id String?       @db.VarChar(100)
-  campaign_id           String?       @db.VarChar(100)
-  latency_ms            Int?
-  ad_watch_logs         ad_watch_logs @relation(fields: [ad_watch_log_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "ad_provider_admob_logs_ad_watch_logs_FK")
+model AdProviderAdmobLogs {
+  id                 Int         @id
+  adWatchLogId       Int         @map("ad_watch_log_id")
+  adUnitId           String?     @map("ad_unit_id") @db.VarChar(100)
+  responseId         String?     @map("response_id") @db.VarChar(100)
+  adSourceName       String?     @map("ad_source_name") @db.VarChar(100)
+  adSourceId         String?     @map("ad_source_id") @db.VarChar(100)
+  adSourceInstanceId String?     @map("ad_source_instance_id") @db.VarChar(100)
+  campaignId         String?     @map("campaign_id") @db.VarChar(100)
+  latencyMs          Int?        @map("latency_ms")
+  adWatchLogs        AdWatchLogs @relation(fields: [adWatchLogId], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "ad_provider_admob_logs_ad_watch_logs_FK")
 
-  @@index([ad_watch_log_id], map: "ad_provider_admob_logs_ad_watch_logs_FK")
+  @@index([adWatchLogId], map: "ad_provider_admob_logs_ad_watch_logs_FK")
+  @@map("ad_provider_admob_logs")
 }
 
-model ad_watch_logs {
-  id                     Int                      @id
-  user_id                Int
-  mission_log_id         Int
-  is_watched             Boolean                  @default(false)
-  watch_duration         Int                      @default(0)
-  reward_earned          Int                      @default(0)
-  watched_at             DateTime                 @default(now()) @db.Timestamp(0)
-  ad_provider_admob_logs ad_provider_admob_logs[]
-  user_mission_logs      user_mission_logs        @relation(fields: [mission_log_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "ad_watch_logs_user_mission_logs_FK")
+model AdWatchLogs {
+  id                  Int                   @id
+  userId              Int                   @map("user_id")
+  missionLogId        Int                   @map("mission_log_id")
+  isWatched           Boolean               @default(false) @map("is_watched")
+  watchDuration       Int                   @default(0) @map("watch_duration")
+  rewardEarned        Int                   @default(0) @map("reward_earned")
+  watchedAt           DateTime              @default(now()) @map("watched_at") @db.Timestamp(0)
+  adProviderAdmobLogs AdProviderAdmobLogs[]
+  userMissionLogs     UserMissionLogs       @relation(fields: [missionLogId], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "ad_watch_logs_user_mission_logs_FK")
 
-  @@index([mission_log_id], map: "ad_watch_logs_user_mission_logs_FK")
-}
-
-/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
-model reward_redemptions {
-  id                      Int                       @id @default(autoincrement())
-  user_id                 Int
-  type                    String                    @db.VarChar(50)
-  status                  reward_redemptions_status @default(requested)
-  amount                  Int
-  reward_transaction_id   Int
-  requested_at            DateTime                  @default(now()) @db.Timestamp(0)
-  completed_at            DateTime?                 @db.Timestamp(0)
-  additional_info         String?                   @db.Text
-  reward_transaction_logs reward_transaction_logs   @relation(fields: [reward_transaction_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "reward_redemptions_reward_transaction_logs_FK")
-  users                   users                     @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "reward_redemptions_users_FK")
-
-  @@index([reward_transaction_id], map: "reward_redemptions_reward_transaction_logs_FK")
-  @@index([user_id], map: "reward_redemptions_users_FK")
+  @@index([missionLogId], map: "ad_watch_logs_user_mission_logs_FK")
+  @@map("ad_watch_logs")
 }
 
 /// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
-model reward_transaction_logs {
-  id                 Int                            @id @default(autoincrement())
-  user_id            Int
-  type               reward_transaction_logs_type
-  source             reward_transaction_logs_source
-  source_id          Int?
-  amount             Int
-  balance_after      Int
-  created_at         DateTime                       @default(now()) @db.Timestamp(0)
-  expires_at         DateTime                       @db.Timestamp(0)
-  reward_redemptions reward_redemptions[]
-  users              users                          @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "reward_transaction_logs_users_FK")
+model RewardRedemptions {
+  id                    Int                     @id @default(autoincrement())
+  userId                Int                     @map("user_id")
+  type                  String                  @db.VarChar(50)
+  status                RewardRedemptionsStatus @default(requested)
+  amount                Int
+  rewardTransactionId   Int                     @map("reward_transaction_id")
+  requestedAt           DateTime                @default(now()) @map("requested_at") @db.Timestamp(0)
+  completedAt           DateTime?               @map("completed_at") @db.Timestamp(0)
+  additionalInfo        String?                 @map("additional_info") @db.Text
+  rewardTransactionLogs RewardTransactionLogs   @relation(fields: [rewardTransactionId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "reward_redemptions_reward_transaction_logs_FK")
+  users                 Users                   @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "reward_redemptions_users_FK")
 
-  @@index([user_id], map: "reward_transaction_logs_users_FK")
+  @@index([rewardTransactionId], map: "reward_redemptions_reward_transaction_logs_FK")
+  @@index([userId], map: "reward_redemptions_users_FK")
+  @@map("reward_redemptions")
 }
 
-model user_mission_logs {
-  id            Int             @id @default(autoincrement())
-  user_id       Int
-  is_correct    Boolean         @default(false)
-  submitted_at  DateTime        @default(now()) @db.Timestamp(0)
-  attempt_count Int             @default(0)
-  ad_watch_logs ad_watch_logs[]
-  users         users           @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: Restrict, map: "user_mission_logs_users_FK")
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model RewardTransactionLogs {
+  id                Int                         @id @default(autoincrement())
+  userId            Int                         @map("user_id")
+  type              RewardTransactionLogsType
+  source            RewardTransactionLogsSource
+  sourceId          Int?                        @map("source_id")
+  amount            Int
+  balanceAfter      Int                         @map("balance_after")
+  createdAt         DateTime                    @default(now()) @map("created_at") @db.Timestamp(0)
+  expiresAt         DateTime?                   @map("expires_at") @db.Timestamp(0)
+  rewardRedemptions RewardRedemptions[]
+  users             Users                       @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "reward_transaction_logs_users_FK")
 
-  @@index([user_id], map: "user_mission_logs_users_FK")
+  @@index([userId], map: "reward_transaction_logs_users_FK")
+  @@map("reward_transaction_logs")
 }
 
-model user_rewards {
-  user_id          Int      @id
-  total_reward     Int      @default(0)
-  available_reward Int
-  updated_at       DateTime @default(now()) @db.Timestamp(0)
-  users            users    @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "user_rewards_users_FK")
+model UserMissionLogs {
+  id           Int           @id @default(autoincrement())
+  userId       Int           @map("user_id")
+  isCorrect    Boolean       @default(false) @map("is_correct")
+  submittedAt  DateTime?     @map("submitted_at") @db.Timestamp(0)
+  attemptCount Int           @default(0) @map("attempt_count")
+  missionId    String        @map("mission_id") @db.VarChar(50)
+  hour         Int
+  date         DateTime      @db.DateTime(0)
+  adWatchLogs  AdWatchLogs[]
+  users        Users         @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Restrict, map: "user_mission_logs_users_FK")
+
+  @@unique([userId, hour, date], map: "user_mission_logs_unique")
+  @@map("user_mission_logs")
 }
 
-model users {
-  id                      Int                       @id @default(autoincrement())
-  email                   String                    @db.VarChar(100)
-  password                String                    @db.VarChar(100)
-  phone_number            String                    @db.VarChar(100)
-  create_at               DateTime                  @default(now()) @db.Timestamp(0)
-  last_login_at           DateTime                  @db.Timestamp(0)
-  reward_balance          Int                       @default(0)
-  type                    users_type                @default(user)
-  reward_redemptions      reward_redemptions[]
-  reward_transaction_logs reward_transaction_logs[]
-  user_mission_logs       user_mission_logs[]
-  user_rewards            user_rewards?
+model UserRewards {
+  userId          Int      @id @map("user_id")
+  totalReward     Int      @default(0) @map("total_reward")
+  availableReward Int      @map("available_reward")
+  updatedAt       DateTime @default(now()) @map("updated_at") @db.Timestamp(0)
+  users           Users    @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "user_rewards_users_FK")
+
+  @@map("user_rewards")
 }
 
-enum reward_transaction_logs_type {
-  earn
-  spend
-  expire
+model Users {
+  id                    Int                     @id @default(autoincrement())
+  email                 String                  @db.VarChar(100)
+  password              String                  @db.VarChar(100)
+  phoneNumber           String?                 @map("phone_number") @db.VarChar(100)
+  createAt              DateTime                @default(now()) @map("create_at") @db.Timestamp(0)
+  lastLoginAt           DateTime                @default(now()) @map("last_login_at") @db.Timestamp(0)
+  rewardBalance         Int                     @default(0) @map("reward_balance")
+  type                  UsersType               @default(user)
+  rewardRedemptions     RewardRedemptions[]
+  rewardTransactionLogs RewardTransactionLogs[]
+  userMissionLogs       UserMissionLogs[]
+  userRewards           UserRewards?
+  userTokens            UserTokens?
+
+  @@map("users")
 }
 
-enum reward_transaction_logs_source {
-  ad_reward
-  reward_spend
-  etc
+model UserTokens {
+  userId       Int      @id @map("user_id")
+  refreshToken String   @map("refresh_token") @db.VarChar(512)
+  expiresAt    DateTime @map("expires_at") @db.DateTime(0)
+  createdAt    DateTime @default(now()) @map("created_at") @db.DateTime(0)
+  updatedAt    DateTime @default(now()) @map("updated_at") @db.DateTime(0)
+  users        Users    @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_tokens_users_FK")
+
+  @@index([refreshToken(length: 100)], map: "idx_user_tokens_refresh_token")
+  @@map("user_tokens")
 }
 
-enum reward_redemptions_status {
+enum RewardRedemptionsStatus {
   requested
   processing
   completed
   rejected
+
+  @@map("reward_redemptions_status")
 }
 
-enum users_type {
+enum UsersType {
   user
   admin
   developer
+
+  @@map("users_type")
+}
+
+enum RewardTransactionLogsType {
+  earn
+  redeem
+  expire
+
+  @@map("reward_transaction_logs_type")
+}
+
+enum RewardTransactionLogsSource {
+  ad_reward
+  reward_redeem
+  etc
+
+  @@map("reward_transaction_logs_source")
 }

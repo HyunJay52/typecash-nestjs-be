@@ -1,0 +1,1972 @@
+[
+  {
+    "id": 1,
+    "used": true,
+    "content": "생각이 현실을 만든다",
+    "date": "2025-07-20 00:00:00",
+    "hour": 16
+  },
+  {
+    "id": 2,
+    "used": true,
+    "content": "지금 이 순간에 집중하자",
+    "date": "2025-07-20 00:00:00",
+    "hour": 17
+  },
+  {
+    "id": 3,
+    "used": true,
+    "content": "하루에 하나씩 이뤄내자",
+    "date": "2025-07-21 00:00:00",
+    "hour": 3
+  },
+  {
+    "id": 4,
+    "used": true,
+    "content": "내일은 오늘보다 나아",
+    "date": "2025-07-21 00:00:00",
+    "hour": 8
+  },
+  {
+    "id": 5,
+    "used": true,
+    "content": "포기하지 않으면 이겨",
+    "date": "2025-07-22 00:00:00",
+    "hour": 5
+  },
+  {
+    "id": 6,
+    "used": true,
+    "content": "나 자신을 믿어야 해",
+    "date": "2025-07-22 00:00:00",
+    "hour": 9
+  },
+  {
+    "id": 7,
+    "used": true,
+    "content": "작은 변화가 시작이야",
+    "date": "2025-08-05 00:00:00",
+    "hour": 11
+  },
+  {
+    "id": 8,
+    "used": true,
+    "content": "하루만 더 버텨보자",
+    "date": "2025-08-05 00:00:00",
+    "hour": 12
+  },
+  {
+    "id": 9,
+    "used": true,
+    "content": "괜찮아 잘하고 있어",
+    "date": "2025-08-05 00:00:00",
+    "hour": 15
+  },
+  {
+    "id": 10,
+    "used": true,
+    "content": "나는 충분히 가치 있어",
+    "date": "2025-08-05 00:00:00",
+    "hour": 16
+  },
+  {
+    "id": 11,
+    "used": false,
+    "content": "오늘도 나에게 박수"
+  },
+  {
+    "id": 12,
+    "used": false,
+    "content": "실패는 과정일 뿐이야"
+  },
+  {
+    "id": 13,
+    "used": false,
+    "content": "햇살처럼 밝게 살아보자"
+  },
+  {
+    "id": 14,
+    "used": false,
+    "content": "내 선택을 믿어보자"
+  },
+  {
+    "id": 15,
+    "used": false,
+    "content": "걱정보단 행동을 해보자"
+  },
+  {
+    "id": 16,
+    "used": false,
+    "content": "기분 좋은 하루가 될 거야"
+  },
+  {
+    "id": 17,
+    "used": false,
+    "content": "천천히 가도 괜찮아"
+  },
+  {
+    "id": 18,
+    "used": false,
+    "content": "두려움보다 용기를 선택해"
+  },
+  {
+    "id": 19,
+    "used": false,
+    "content": "행복은 가까이에 있어"
+  },
+  {
+    "id": 20,
+    "used": false,
+    "content": "숨 쉬는 것도 충분히 잘한 것"
+  },
+  {
+    "id": 21,
+    "used": false,
+    "content": "마음 먹은 대로 되는 거야"
+  },
+  {
+    "id": 22,
+    "used": false,
+    "content": "나를 응원해주는 사람 있어"
+  },
+  {
+    "id": 23,
+    "used": false,
+    "content": "시간이 해결해줄 거야"
+  },
+  {
+    "id": 24,
+    "used": false,
+    "content": "다 괜찮아질 거야"
+  },
+  {
+    "id": 25,
+    "used": false,
+    "content": "지금 이대로도 괜찮아"
+  },
+  {
+    "id": 26,
+    "used": false,
+    "content": "스스로를 칭찬해보자"
+  },
+  {
+    "id": 27,
+    "used": false,
+    "content": "작은 기쁨을 느껴보자"
+  },
+  {
+    "id": 28,
+    "used": false,
+    "content": "지금 있는 그대로 괜찮아"
+  },
+  {
+    "id": 29,
+    "used": false,
+    "content": "지금 웃을 이유가 충분해"
+  },
+  {
+    "id": 30,
+    "used": false,
+    "content": "작은 걸음이 큰 변화를"
+  },
+  {
+    "id": 31,
+    "used": false,
+    "content": "나는 소중한 존재야"
+  },
+  {
+    "id": 32,
+    "used": false,
+    "content": "오늘도 잘 해낼 거야"
+  },
+  {
+    "id": 33,
+    "used": false,
+    "content": "힘들면 잠시 쉬어가도 돼"
+  },
+  {
+    "id": 34,
+    "used": false,
+    "content": "멈춰도 괜찮아 다시 가면 돼"
+  },
+  {
+    "id": 35,
+    "used": false,
+    "content": "내 속도대로 가면 돼"
+  },
+  {
+    "id": 36,
+    "used": false,
+    "content": "내가 나여서 다행이야"
+  },
+  {
+    "id": 37,
+    "used": false,
+    "content": "나는 내 길을 가고 있어"
+  },
+  {
+    "id": 38,
+    "used": false,
+    "content": "기회는 준비된 자의 것"
+  },
+  {
+    "id": 39,
+    "used": false,
+    "content": "다 잘 될 거야"
+  },
+  {
+    "id": 40,
+    "used": false,
+    "content": "마음이 가는 대로 해보자"
+  },
+  {
+    "id": 41,
+    "used": false,
+    "content": "감사는 행복을 부른다"
+  },
+  {
+    "id": 42,
+    "used": false,
+    "content": "오늘은 더 나아질 거야"
+  },
+  {
+    "id": 43,
+    "used": false,
+    "content": "나는 나를 사랑할 거야"
+  },
+  {
+    "id": 44,
+    "used": false,
+    "content": "나답게 사는 게 중요해"
+  },
+  {
+    "id": 45,
+    "used": false,
+    "content": "매일 성장하는 중이야"
+  },
+  {
+    "id": 46,
+    "used": false,
+    "content": "지금부터 다시 시작이야"
+  },
+  {
+    "id": 47,
+    "used": false,
+    "content": "내 속도대로 살아갈래"
+  },
+  {
+    "id": 48,
+    "used": false,
+    "content": "나는 이미 충분히 멋져"
+  },
+  {
+    "id": 49,
+    "used": false,
+    "content": "한 번 더 도전해보자"
+  },
+  {
+    "id": 50,
+    "used": false,
+    "content": "나아가는 중이니까 괜찮아"
+  },
+  {
+    "id": 51,
+    "used": false,
+    "content": "하루하루가 기회야"
+  },
+  {
+    "id": 52,
+    "used": false,
+    "content": "정말 생각이 현실을 만든다"
+  },
+  {
+    "id": 53,
+    "used": false,
+    "content": "진심으로 지금 이 순간에 집중하자"
+  },
+  {
+    "id": 54,
+    "used": false,
+    "content": "오늘도 하루에 하나씩 이뤄내자"
+  },
+  {
+    "id": 55,
+    "used": false,
+    "content": "가볍게 내일은 오늘보다 나아"
+  },
+  {
+    "id": 56,
+    "used": false,
+    "content": "자연스럽게 포기하지 않으면 이겨"
+  },
+  {
+    "id": 57,
+    "used": false,
+    "content": "다시 나 자신을 믿어야 해"
+  },
+  {
+    "id": 58,
+    "used": false,
+    "content": "지금 작은 변화가 시작이야"
+  },
+  {
+    "id": 59,
+    "used": false,
+    "content": "정말 하루만 더 버텨보자"
+  },
+  {
+    "id": 60,
+    "used": false,
+    "content": "진심으로 괜찮아 잘하고 있어"
+  },
+  {
+    "id": 61,
+    "used": false,
+    "content": "오늘도 나는 충분히 가치 있어"
+  },
+  {
+    "id": 62,
+    "used": false,
+    "content": "가볍게 오늘도 나에게 박수"
+  },
+  {
+    "id": 63,
+    "used": false,
+    "content": "자연스럽게 실패는 과정일 뿐이야"
+  },
+  {
+    "id": 64,
+    "used": false,
+    "content": "다시 햇살처럼 밝게 살아보자"
+  },
+  {
+    "id": 65,
+    "used": false,
+    "content": "지금 내 선택을 믿어보자"
+  },
+  {
+    "id": 66,
+    "used": false,
+    "content": "정말 걱정보단 행동을 해보자"
+  },
+  {
+    "id": 67,
+    "used": false,
+    "content": "진심으로 기분 좋은 하루가 될 거야"
+  },
+  {
+    "id": 68,
+    "used": false,
+    "content": "오늘도 천천히 가도 괜찮아"
+  },
+  {
+    "id": 69,
+    "used": false,
+    "content": "가볍게 두려움보다 용기를 선택해"
+  },
+  {
+    "id": 70,
+    "used": false,
+    "content": "자연스럽게 행복은 가까이에 있어"
+  },
+  {
+    "id": 71,
+    "used": false,
+    "content": "다시 숨 쉬는 것도 충분히 잘한 것"
+  },
+  {
+    "id": 72,
+    "used": false,
+    "content": "지금 마음 먹은 대로 되는 거야"
+  },
+  {
+    "id": 73,
+    "used": false,
+    "content": "정말 나를 응원해주는 사람 있어"
+  },
+  {
+    "id": 74,
+    "used": false,
+    "content": "진심으로 시간이 해결해줄 거야"
+  },
+  {
+    "id": 75,
+    "used": false,
+    "content": "오늘도 다 괜찮아질 거야"
+  },
+  {
+    "id": 76,
+    "used": false,
+    "content": "가볍게 지금 이대로도 괜찮아"
+  },
+  {
+    "id": 77,
+    "used": false,
+    "content": "자연스럽게 스스로를 칭찬해보자"
+  },
+  {
+    "id": 78,
+    "used": false,
+    "content": "다시 작은 기쁨을 느껴보자"
+  },
+  {
+    "id": 79,
+    "used": false,
+    "content": "지금 지금 있는 그대로 괜찮아"
+  },
+  {
+    "id": 80,
+    "used": false,
+    "content": "정말 지금 웃을 이유가 충분해"
+  },
+  {
+    "id": 81,
+    "used": false,
+    "content": "진심으로 작은 걸음이 큰 변화를"
+  },
+  {
+    "id": 82,
+    "used": false,
+    "content": "오늘도 나는 소중한 존재야"
+  },
+  {
+    "id": 83,
+    "used": false,
+    "content": "가볍게 오늘도 잘 해낼 거야"
+  },
+  {
+    "id": 84,
+    "used": false,
+    "content": "자연스럽게 힘들면 잠시 쉬어가도 돼"
+  },
+  {
+    "id": 85,
+    "used": false,
+    "content": "다시 멈춰도 괜찮아 다시 가면 돼"
+  },
+  {
+    "id": 86,
+    "used": false,
+    "content": "지금 내 속도대로 가면 돼"
+  },
+  {
+    "id": 87,
+    "used": false,
+    "content": "정말 내가 나여서 다행이야"
+  },
+  {
+    "id": 88,
+    "used": false,
+    "content": "진심으로 나는 내 길을 가고 있어"
+  },
+  {
+    "id": 89,
+    "used": false,
+    "content": "오늘도 기회는 준비된 자의 것"
+  },
+  {
+    "id": 90,
+    "used": false,
+    "content": "가볍게 다 잘 될 거야"
+  },
+  {
+    "id": 91,
+    "used": false,
+    "content": "자연스럽게 마음이 가는 대로 해보자"
+  },
+  {
+    "id": 92,
+    "used": false,
+    "content": "다시 감사는 행복을 부른다"
+  },
+  {
+    "id": 93,
+    "used": false,
+    "content": "지금 오늘은 더 나아질 거야"
+  },
+  {
+    "id": 94,
+    "used": false,
+    "content": "정말 나는 나를 사랑할 거야"
+  },
+  {
+    "id": 95,
+    "used": false,
+    "content": "진심으로 나답게 사는 게 중요해"
+  },
+  {
+    "id": 96,
+    "used": false,
+    "content": "오늘도 매일 성장하는 중이야"
+  },
+  {
+    "id": 97,
+    "used": false,
+    "content": "가볍게 지금부터 다시 시작이야"
+  },
+  {
+    "id": 98,
+    "used": false,
+    "content": "자연스럽게 내 속도대로 살아갈래"
+  },
+  {
+    "id": 99,
+    "used": false,
+    "content": "다시 나는 이미 충분히 멋져"
+  },
+  {
+    "id": 100,
+    "used": false,
+    "content": "지금 한 번 더 도전해보자"
+  },
+  {
+    "id": 101,
+    "used": false,
+    "content": "정말 나아가는 중이니까 괜찮아"
+  },
+  {
+    "id": 102,
+    "used": false,
+    "content": "진심으로 하루하루가 기회야"
+  },
+  {
+    "id": 103,
+    "used": false,
+    "content": "오늘도 생각이 현실을 만든다"
+  },
+  {
+    "id": 104,
+    "used": false,
+    "content": "가볍게 지금 이 순간에 집중하자"
+  },
+  {
+    "id": 105,
+    "used": false,
+    "content": "자연스럽게 하루에 하나씩 이뤄내자"
+  },
+  {
+    "id": 106,
+    "used": false,
+    "content": "다시 내일은 오늘보다 나아"
+  },
+  {
+    "id": 107,
+    "used": false,
+    "content": "지금 포기하지 않으면 이겨"
+  },
+  {
+    "id": 108,
+    "used": false,
+    "content": "정말 나 자신을 믿어야 해"
+  },
+  {
+    "id": 109,
+    "used": false,
+    "content": "진심으로 작은 변화가 시작이야"
+  },
+  {
+    "id": 110,
+    "used": false,
+    "content": "오늘도 하루만 더 버텨보자"
+  },
+  {
+    "id": 111,
+    "used": false,
+    "content": "가볍게 괜찮아 잘하고 있어"
+  },
+  {
+    "id": 112,
+    "used": false,
+    "content": "자연스럽게 나는 충분히 가치 있어"
+  },
+  {
+    "id": 113,
+    "used": false,
+    "content": "다시 오늘도 나에게 박수"
+  },
+  {
+    "id": 114,
+    "used": false,
+    "content": "지금 실패는 과정일 뿐이야"
+  },
+  {
+    "id": 115,
+    "used": false,
+    "content": "정말 햇살처럼 밝게 살아보자"
+  },
+  {
+    "id": 116,
+    "used": false,
+    "content": "진심으로 내 선택을 믿어보자"
+  },
+  {
+    "id": 117,
+    "used": false,
+    "content": "오늘도 걱정보단 행동을 해보자"
+  },
+  {
+    "id": 118,
+    "used": false,
+    "content": "가볍게 기분 좋은 하루가 될 거야"
+  },
+  {
+    "id": 119,
+    "used": false,
+    "content": "자연스럽게 천천히 가도 괜찮아"
+  },
+  {
+    "id": 120,
+    "used": false,
+    "content": "다시 두려움보다 용기를 선택해"
+  },
+  {
+    "id": 121,
+    "used": false,
+    "content": "지금 행복은 가까이에 있어"
+  },
+  {
+    "id": 122,
+    "used": false,
+    "content": "정말 숨 쉬는 것도 충분히 잘한 것"
+  },
+  {
+    "id": 123,
+    "used": false,
+    "content": "진심으로 마음 먹은 대로 되는 거야"
+  },
+  {
+    "id": 124,
+    "used": false,
+    "content": "오늘도 나를 응원해주는 사람 있어"
+  },
+  {
+    "id": 125,
+    "used": false,
+    "content": "가볍게 시간이 해결해줄 거야"
+  },
+  {
+    "id": 126,
+    "used": false,
+    "content": "자연스럽게 다 괜찮아질 거야"
+  },
+  {
+    "id": 127,
+    "used": false,
+    "content": "다시 지금 이대로도 괜찮아"
+  },
+  {
+    "id": 128,
+    "used": false,
+    "content": "지금 스스로를 칭찬해보자"
+  },
+  {
+    "id": 129,
+    "used": false,
+    "content": "정말 작은 기쁨을 느껴보자"
+  },
+  {
+    "id": 130,
+    "used": false,
+    "content": "진심으로 지금 있는 그대로 괜찮아"
+  },
+  {
+    "id": 131,
+    "used": false,
+    "content": "오늘도 지금 웃을 이유가 충분해"
+  },
+  {
+    "id": 132,
+    "used": false,
+    "content": "가볍게 작은 걸음이 큰 변화를"
+  },
+  {
+    "id": 133,
+    "used": false,
+    "content": "자연스럽게 나는 소중한 존재야"
+  },
+  {
+    "id": 134,
+    "used": false,
+    "content": "다시 오늘도 잘 해낼 거야"
+  },
+  {
+    "id": 135,
+    "used": false,
+    "content": "지금 힘들면 잠시 쉬어가도 돼"
+  },
+  {
+    "id": 136,
+    "used": false,
+    "content": "정말 멈춰도 괜찮아 다시 가면 돼"
+  },
+  {
+    "id": 137,
+    "used": false,
+    "content": "진심으로 내 속도대로 가면 돼"
+  },
+  {
+    "id": 138,
+    "used": false,
+    "content": "오늘도 내가 나여서 다행이야"
+  },
+  {
+    "id": 139,
+    "used": false,
+    "content": "가볍게 나는 내 길을 가고 있어"
+  },
+  {
+    "id": 140,
+    "used": false,
+    "content": "자연스럽게 기회는 준비된 자의 것"
+  },
+  {
+    "id": 141,
+    "used": false,
+    "content": "다시 다 잘 될 거야"
+  },
+  {
+    "id": 142,
+    "used": false,
+    "content": "지금 마음이 가는 대로 해보자"
+  },
+  {
+    "id": 143,
+    "used": false,
+    "content": "정말 감사는 행복을 부른다"
+  },
+  {
+    "id": 144,
+    "used": false,
+    "content": "진심으로 오늘은 더 나아질 거야"
+  },
+  {
+    "id": 145,
+    "used": false,
+    "content": "오늘도 나는 나를 사랑할 거야"
+  },
+  {
+    "id": 146,
+    "used": false,
+    "content": "가볍게 나답게 사는 게 중요해"
+  },
+  {
+    "id": 147,
+    "used": false,
+    "content": "자연스럽게 매일 성장하는 중이야"
+  },
+  {
+    "id": 148,
+    "used": false,
+    "content": "다시 지금부터 다시 시작이야"
+  },
+  {
+    "id": 149,
+    "used": false,
+    "content": "지금 내 속도대로 살아갈래"
+  },
+  {
+    "id": 150,
+    "used": false,
+    "content": "정말 나는 이미 충분히 멋져"
+  },
+  {
+    "id": 151,
+    "used": false,
+    "content": "진심으로 한 번 더 도전해보자"
+  },
+  {
+    "id": 152,
+    "used": false,
+    "content": "오늘도 나아가는 중이니까 괜찮아"
+  },
+  {
+    "id": 153,
+    "used": false,
+    "content": "가볍게 하루하루가 기회야"
+  },
+  {
+    "id": 154,
+    "used": false,
+    "content": "자연스럽게 생각이 현실을 만든다"
+  },
+  {
+    "id": 155,
+    "used": false,
+    "content": "다시 지금 이 순간에 집중하자"
+  },
+  {
+    "id": 156,
+    "used": false,
+    "content": "지금 하루에 하나씩 이뤄내자"
+  },
+  {
+    "id": 157,
+    "used": false,
+    "content": "정말 내일은 오늘보다 나아"
+  },
+  {
+    "id": 158,
+    "used": false,
+    "content": "진심으로 포기하지 않으면 이겨"
+  },
+  {
+    "id": 159,
+    "used": false,
+    "content": "오늘도 나 자신을 믿어야 해"
+  },
+  {
+    "id": 160,
+    "used": false,
+    "content": "가볍게 작은 변화가 시작이야"
+  },
+  {
+    "id": 161,
+    "used": false,
+    "content": "자연스럽게 하루만 더 버텨보자"
+  },
+  {
+    "id": 162,
+    "used": false,
+    "content": "다시 괜찮아 잘하고 있어"
+  },
+  {
+    "id": 163,
+    "used": false,
+    "content": "지금 나는 충분히 가치 있어"
+  },
+  {
+    "id": 164,
+    "used": false,
+    "content": "정말 오늘도 나에게 박수"
+  },
+  {
+    "id": 165,
+    "used": false,
+    "content": "진심으로 실패는 과정일 뿐이야"
+  },
+  {
+    "id": 166,
+    "used": false,
+    "content": "오늘도 햇살처럼 밝게 살아보자"
+  },
+  {
+    "id": 167,
+    "used": false,
+    "content": "가볍게 내 선택을 믿어보자"
+  },
+  {
+    "id": 168,
+    "used": false,
+    "content": "자연스럽게 걱정보단 행동을 해보자"
+  },
+  {
+    "id": 169,
+    "used": false,
+    "content": "다시 기분 좋은 하루가 될 거야"
+  },
+  {
+    "id": 170,
+    "used": false,
+    "content": "지금 천천히 가도 괜찮아"
+  },
+  {
+    "id": 171,
+    "used": false,
+    "content": "정말 두려움보다 용기를 선택해"
+  },
+  {
+    "id": 172,
+    "used": false,
+    "content": "진심으로 행복은 가까이에 있어"
+  },
+  {
+    "id": 173,
+    "used": false,
+    "content": "오늘도 숨 쉬는 것도 충분히 잘한"
+  },
+  {
+    "id": 174,
+    "used": false,
+    "content": "가볍게 마음 먹은 대로 되는 거야"
+  },
+  {
+    "id": 175,
+    "used": false,
+    "content": "자연스럽게 나를 응원해주는 사람 있"
+  },
+  {
+    "id": 176,
+    "used": false,
+    "content": "다시 시간이 해결해줄 거야"
+  },
+  {
+    "id": 177,
+    "used": false,
+    "content": "지금 다 괜찮아질 거야"
+  },
+  {
+    "id": 178,
+    "used": false,
+    "content": "정말 지금 이대로도 괜찮아"
+  },
+  {
+    "id": 179,
+    "used": false,
+    "content": "진심으로 스스로를 칭찬해보자"
+  },
+  {
+    "id": 180,
+    "used": false,
+    "content": "오늘도 작은 기쁨을 느껴보자"
+  },
+  {
+    "id": 181,
+    "used": false,
+    "content": "가볍게 지금 있는 그대로 괜찮아"
+  },
+  {
+    "id": 182,
+    "used": false,
+    "content": "자연스럽게 지금 웃을 이유가 충분해"
+  },
+  {
+    "id": 183,
+    "used": false,
+    "content": "다시 작은 걸음이 큰 변화를"
+  },
+  {
+    "id": 184,
+    "used": false,
+    "content": "지금 나는 소중한 존재야"
+  },
+  {
+    "id": 185,
+    "used": false,
+    "content": "정말 오늘도 잘 해낼 거야"
+  },
+  {
+    "id": 186,
+    "used": false,
+    "content": "진심으로 힘들면 잠시 쉬어가도 돼"
+  },
+  {
+    "id": 187,
+    "used": false,
+    "content": "오늘도 멈춰도 괜찮아 다시 가면 돼"
+  },
+  {
+    "id": 188,
+    "used": false,
+    "content": "가볍게 내 속도대로 가면 돼"
+  },
+  {
+    "id": 189,
+    "used": false,
+    "content": "자연스럽게 내가 나여서 다행이야"
+  },
+  {
+    "id": 190,
+    "used": false,
+    "content": "다시 나는 내 길을 가고 있어"
+  },
+  {
+    "id": 191,
+    "used": false,
+    "content": "지금 기회는 준비된 자의 것"
+  },
+  {
+    "id": 192,
+    "used": false,
+    "content": "정말 다 잘 될 거야"
+  },
+  {
+    "id": 193,
+    "used": false,
+    "content": "진심으로 마음이 가는 대로 해보자"
+  },
+  {
+    "id": 194,
+    "used": false,
+    "content": "오늘도 감사는 행복을 부른다"
+  },
+  {
+    "id": 195,
+    "used": false,
+    "content": "가볍게 오늘은 더 나아질 거야"
+  },
+  {
+    "id": 196,
+    "used": false,
+    "content": "자연스럽게 나는 나를 사랑할 거야"
+  },
+  {
+    "id": 197,
+    "used": false,
+    "content": "다시 나답게 사는 게 중요해"
+  },
+  {
+    "id": 198,
+    "used": false,
+    "content": "지금 매일 성장하는 중이야"
+  },
+  {
+    "id": 199,
+    "used": false,
+    "content": "정말 지금부터 다시 시작이야"
+  },
+  {
+    "id": 200,
+    "used": false,
+    "content": "진심으로 내 속도대로 살아갈래"
+  },
+  {
+    "id": 201,
+    "used": false,
+    "content": "오늘도 나는 이미 충분히 멋져"
+  },
+  {
+    "id": 202,
+    "used": false,
+    "content": "가볍게 한 번 더 도전해보자"
+  },
+  {
+    "id": 203,
+    "used": false,
+    "content": "자연스럽게 나아가는 중이니까 괜찮아"
+  },
+  {
+    "id": 204,
+    "used": false,
+    "content": "다시 하루하루가 기회야"
+  },
+  {
+    "id": 205,
+    "used": false,
+    "content": "지금 생각이 현실을 만든다"
+  },
+  {
+    "id": 206,
+    "used": false,
+    "content": "정말 지금 이 순간에 집중하자"
+  },
+  {
+    "id": 207,
+    "used": false,
+    "content": "진심으로 하루에 하나씩 이뤄내자"
+  },
+  {
+    "id": 208,
+    "used": false,
+    "content": "오늘도 내일은 오늘보다 나아"
+  },
+  {
+    "id": 209,
+    "used": false,
+    "content": "가볍게 포기하지 않으면 이겨"
+  },
+  {
+    "id": 210,
+    "used": false,
+    "content": "자연스럽게 나 자신을 믿어야 해"
+  },
+  {
+    "id": 211,
+    "used": false,
+    "content": "다시 작은 변화가 시작이야"
+  },
+  {
+    "id": 212,
+    "used": false,
+    "content": "지금 하루만 더 버텨보자"
+  },
+  {
+    "id": 213,
+    "used": false,
+    "content": "정말 괜찮아 잘하고 있어"
+  },
+  {
+    "id": 214,
+    "used": false,
+    "content": "진심으로 나는 충분히 가치 있어"
+  },
+  {
+    "id": 215,
+    "used": false,
+    "content": "오늘도 오늘도 나에게 박수"
+  },
+  {
+    "id": 216,
+    "used": false,
+    "content": "가볍게 실패는 과정일 뿐이야"
+  },
+  {
+    "id": 217,
+    "used": false,
+    "content": "자연스럽게 햇살처럼 밝게 살아보자"
+  },
+  {
+    "id": 218,
+    "used": false,
+    "content": "다시 내 선택을 믿어보자"
+  },
+  {
+    "id": 219,
+    "used": false,
+    "content": "지금 걱정보단 행동을 해보자"
+  },
+  {
+    "id": 220,
+    "used": false,
+    "content": "정말 기분 좋은 하루가 될 거야"
+  },
+  {
+    "id": 221,
+    "used": false,
+    "content": "진심으로 천천히 가도 괜찮아"
+  },
+  {
+    "id": 222,
+    "used": false,
+    "content": "오늘도 두려움보다 용기를 선택해"
+  },
+  {
+    "id": 223,
+    "used": false,
+    "content": "가볍게 행복은 가까이에 있어"
+  },
+  {
+    "id": 224,
+    "used": false,
+    "content": "자연스럽게 숨 쉬는 것도 충분히 잘"
+  },
+  {
+    "id": 225,
+    "used": false,
+    "content": "다시 마음 먹은 대로 되는 거야"
+  },
+  {
+    "id": 226,
+    "used": false,
+    "content": "지금 나를 응원해주는 사람 있어"
+  },
+  {
+    "id": 227,
+    "used": false,
+    "content": "정말 시간이 해결해줄 거야"
+  },
+  {
+    "id": 228,
+    "used": false,
+    "content": "진심으로 다 괜찮아질 거야"
+  },
+  {
+    "id": 229,
+    "used": false,
+    "content": "오늘도 지금 이대로도 괜찮아"
+  },
+  {
+    "id": 230,
+    "used": false,
+    "content": "가볍게 스스로를 칭찬해보자"
+  },
+  {
+    "id": 231,
+    "used": false,
+    "content": "자연스럽게 작은 기쁨을 느껴보자"
+  },
+  {
+    "id": 232,
+    "used": false,
+    "content": "다시 지금 있는 그대로 괜찮아"
+  },
+  {
+    "id": 233,
+    "used": false,
+    "content": "지금 지금 웃을 이유가 충분해"
+  },
+  {
+    "id": 234,
+    "used": false,
+    "content": "정말 작은 걸음이 큰 변화를"
+  },
+  {
+    "id": 235,
+    "used": false,
+    "content": "진심으로 나는 소중한 존재야"
+  },
+  {
+    "id": 236,
+    "used": false,
+    "content": "오늘도 오늘도 잘 해낼 거야"
+  },
+  {
+    "id": 237,
+    "used": false,
+    "content": "가볍게 힘들면 잠시 쉬어가도 돼"
+  },
+  {
+    "id": 238,
+    "used": false,
+    "content": "자연스럽게 멈춰도 괜찮아 다시 가면"
+  },
+  {
+    "id": 239,
+    "used": false,
+    "content": "다시 내 속도대로 가면 돼"
+  },
+  {
+    "id": 240,
+    "used": false,
+    "content": "지금 내가 나여서 다행이야"
+  },
+  {
+    "id": 241,
+    "used": false,
+    "content": "정말 나는 내 길을 가고 있어"
+  },
+  {
+    "id": 242,
+    "used": false,
+    "content": "진심으로 기회는 준비된 자의 것"
+  },
+  {
+    "id": 243,
+    "used": false,
+    "content": "오늘도 다 잘 될 거야"
+  },
+  {
+    "id": 244,
+    "used": false,
+    "content": "가볍게 마음이 가는 대로 해보자"
+  },
+  {
+    "id": 245,
+    "used": false,
+    "content": "자연스럽게 감사는 행복을 부른다"
+  },
+  {
+    "id": 246,
+    "used": false,
+    "content": "다시 오늘은 더 나아질 거야"
+  },
+  {
+    "id": 247,
+    "used": false,
+    "content": "지금 나는 나를 사랑할 거야"
+  },
+  {
+    "id": 248,
+    "used": false,
+    "content": "정말 나답게 사는 게 중요해"
+  },
+  {
+    "id": 249,
+    "used": false,
+    "content": "진심으로 매일 성장하는 중이야"
+  },
+  {
+    "id": 250,
+    "used": false,
+    "content": "오늘도 지금부터 다시 시작이야"
+  },
+  {
+    "id": 251,
+    "used": false,
+    "content": "가볍게 내 속도대로 살아갈래"
+  },
+  {
+    "id": 252,
+    "used": false,
+    "content": "자연스럽게 나는 이미 충분히 멋져"
+  },
+  {
+    "id": 253,
+    "used": false,
+    "content": "다시 한 번 더 도전해보자"
+  },
+  {
+    "id": 254,
+    "used": false,
+    "content": "지금 나아가는 중이니까 괜찮아"
+  },
+  {
+    "id": 255,
+    "used": false,
+    "content": "정말 하루하루가 기회야"
+  },
+  {
+    "id": 256,
+    "used": false,
+    "content": "진심으로 생각이 현실을 만든다"
+  },
+  {
+    "id": 257,
+    "used": false,
+    "content": "오늘도 지금 이 순간에 집중하자"
+  },
+  {
+    "id": 258,
+    "used": false,
+    "content": "가볍게 하루에 하나씩 이뤄내자"
+  },
+  {
+    "id": 259,
+    "used": false,
+    "content": "자연스럽게 내일은 오늘보다 나아"
+  },
+  {
+    "id": 260,
+    "used": false,
+    "content": "다시 포기하지 않으면 이겨"
+  },
+  {
+    "id": 261,
+    "used": false,
+    "content": "지금 나 자신을 믿어야 해"
+  },
+  {
+    "id": 262,
+    "used": false,
+    "content": "정말 작은 변화가 시작이야"
+  },
+  {
+    "id": 263,
+    "used": false,
+    "content": "진심으로 하루만 더 버텨보자"
+  },
+  {
+    "id": 264,
+    "used": false,
+    "content": "오늘도 괜찮아 잘하고 있어"
+  },
+  {
+    "id": 265,
+    "used": false,
+    "content": "가볍게 나는 충분히 가치 있어"
+  },
+  {
+    "id": 266,
+    "used": false,
+    "content": "자연스럽게 오늘도 나에게 박수"
+  },
+  {
+    "id": 267,
+    "used": false,
+    "content": "다시 실패는 과정일 뿐이야"
+  },
+  {
+    "id": 268,
+    "used": false,
+    "content": "지금 햇살처럼 밝게 살아보자"
+  },
+  {
+    "id": 269,
+    "used": false,
+    "content": "정말 내 선택을 믿어보자"
+  },
+  {
+    "id": 270,
+    "used": false,
+    "content": "진심으로 걱정보단 행동을 해보자"
+  },
+  {
+    "id": 271,
+    "used": false,
+    "content": "오늘도 기분 좋은 하루가 될 거야"
+  },
+  {
+    "id": 272,
+    "used": false,
+    "content": "가볍게 천천히 가도 괜찮아"
+  },
+  {
+    "id": 273,
+    "used": false,
+    "content": "자연스럽게 두려움보다 용기를 선택해"
+  },
+  {
+    "id": 274,
+    "used": false,
+    "content": "다시 행복은 가까이에 있어"
+  },
+  {
+    "id": 275,
+    "used": false,
+    "content": "지금 숨 쉬는 것도 충분히 잘한 것"
+  },
+  {
+    "id": 276,
+    "used": false,
+    "content": "정말 마음 먹은 대로 되는 거야"
+  },
+  {
+    "id": 277,
+    "used": false,
+    "content": "진심으로 나를 응원해주는 사람 있어"
+  },
+  {
+    "id": 278,
+    "used": false,
+    "content": "오늘도 시간이 해결해줄 거야"
+  },
+  {
+    "id": 279,
+    "used": false,
+    "content": "가볍게 다 괜찮아질 거야"
+  },
+  {
+    "id": 280,
+    "used": false,
+    "content": "자연스럽게 지금 이대로도 괜찮아"
+  },
+  {
+    "id": 281,
+    "used": false,
+    "content": "다시 스스로를 칭찬해보자"
+  },
+  {
+    "id": 282,
+    "used": false,
+    "content": "지금 작은 기쁨을 느껴보자"
+  },
+  {
+    "id": 283,
+    "used": false,
+    "content": "정말 지금 있는 그대로 괜찮아"
+  },
+  {
+    "id": 284,
+    "used": false,
+    "content": "진심으로 지금 웃을 이유가 충분해"
+  },
+  {
+    "id": 285,
+    "used": false,
+    "content": "오늘도 작은 걸음이 큰 변화를"
+  },
+  {
+    "id": 286,
+    "used": false,
+    "content": "가볍게 나는 소중한 존재야"
+  },
+  {
+    "id": 287,
+    "used": false,
+    "content": "자연스럽게 오늘도 잘 해낼 거야"
+  },
+  {
+    "id": 288,
+    "used": false,
+    "content": "다시 힘들면 잠시 쉬어가도 돼"
+  },
+  {
+    "id": 289,
+    "used": false,
+    "content": "지금 멈춰도 괜찮아 다시 가면 돼"
+  },
+  {
+    "id": 290,
+    "used": false,
+    "content": "정말 내 속도대로 가면 돼"
+  },
+  {
+    "id": 291,
+    "used": false,
+    "content": "진심으로 내가 나여서 다행이야"
+  },
+  {
+    "id": 292,
+    "used": false,
+    "content": "오늘도 나는 내 길을 가고 있어"
+  },
+  {
+    "id": 293,
+    "used": false,
+    "content": "가볍게 기회는 준비된 자의 것"
+  },
+  {
+    "id": 294,
+    "used": false,
+    "content": "자연스럽게 다 잘 될 거야"
+  },
+  {
+    "id": 295,
+    "used": false,
+    "content": "다시 마음이 가는 대로 해보자"
+  },
+  {
+    "id": 296,
+    "used": false,
+    "content": "지금 감사는 행복을 부른다"
+  },
+  {
+    "id": 297,
+    "used": false,
+    "content": "정말 오늘은 더 나아질 거야"
+  },
+  {
+    "id": 298,
+    "used": false,
+    "content": "진심으로 나는 나를 사랑할 거야"
+  },
+  {
+    "id": 299,
+    "used": false,
+    "content": "오늘도 나답게 사는 게 중요해"
+  },
+  {
+    "id": 300,
+    "used": false,
+    "content": "가볍게 매일 성장하는 중이야"
+  },
+  {
+    "id": 301,
+    "used": false,
+    "content": "자연스럽게 지금부터 다시 시작이야"
+  },
+  {
+    "id": 302,
+    "used": false,
+    "content": "다시 내 속도대로 살아갈래"
+  },
+  {
+    "id": 303,
+    "used": false,
+    "content": "지금 나는 이미 충분히 멋져"
+  },
+  {
+    "id": 304,
+    "used": false,
+    "content": "정말 한 번 더 도전해보자"
+  },
+  {
+    "id": 305,
+    "used": false,
+    "content": "진심으로 나아가는 중이니까 괜찮아"
+  },
+  {
+    "id": 306,
+    "used": false,
+    "content": "오늘도 하루하루가 기회야"
+  },
+  {
+    "id": 307,
+    "used": false,
+    "content": "가볍게 생각이 현실을 만든다"
+  },
+  {
+    "id": 308,
+    "used": false,
+    "content": "자연스럽게 지금 이 순간에 집중하자"
+  },
+  {
+    "id": 309,
+    "used": false,
+    "content": "다시 하루에 하나씩 이뤄내자"
+  },
+  {
+    "id": 310,
+    "used": false,
+    "content": "지금 내일은 오늘보다 나아"
+  },
+  {
+    "id": 311,
+    "used": false,
+    "content": "정말 포기하지 않으면 이겨"
+  },
+  {
+    "id": 312,
+    "used": false,
+    "content": "진심으로 나 자신을 믿어야 해"
+  },
+  {
+    "id": 313,
+    "used": false,
+    "content": "오늘도 작은 변화가 시작이야"
+  },
+  {
+    "id": 314,
+    "used": false,
+    "content": "가볍게 하루만 더 버텨보자"
+  },
+  {
+    "id": 315,
+    "used": false,
+    "content": "자연스럽게 괜찮아 잘하고 있어"
+  },
+  {
+    "id": 316,
+    "used": false,
+    "content": "다시 나는 충분히 가치 있어"
+  },
+  {
+    "id": 317,
+    "used": false,
+    "content": "지금 오늘도 나에게 박수"
+  },
+  {
+    "id": 318,
+    "used": false,
+    "content": "정말 실패는 과정일 뿐이야"
+  },
+  {
+    "id": 319,
+    "used": false,
+    "content": "진심으로 햇살처럼 밝게 살아보자"
+  },
+  {
+    "id": 320,
+    "used": false,
+    "content": "오늘도 내 선택을 믿어보자"
+  },
+  {
+    "id": 321,
+    "used": false,
+    "content": "가볍게 걱정보단 행동을 해보자"
+  },
+  {
+    "id": 322,
+    "used": false,
+    "content": "자연스럽게 기분 좋은 하루가 될 거"
+  },
+  {
+    "id": 323,
+    "used": false,
+    "content": "다시 천천히 가도 괜찮아"
+  },
+  {
+    "id": 324,
+    "used": false,
+    "content": "지금 두려움보다 용기를 선택해"
+  },
+  {
+    "id": 325,
+    "used": false,
+    "content": "정말 행복은 가까이에 있어"
+  },
+  {
+    "id": 326,
+    "used": false,
+    "content": "진심으로 숨 쉬는 것도 충분히 잘한"
+  },
+  {
+    "id": 327,
+    "used": false,
+    "content": "오늘도 마음 먹은 대로 되는 거야"
+  },
+  {
+    "id": 328,
+    "used": false,
+    "content": "가볍게 나를 응원해주는 사람 있어"
+  },
+  {
+    "id": 329,
+    "used": false,
+    "content": "자연스럽게 시간이 해결해줄 거야"
+  },
+  {
+    "id": 330,
+    "used": false,
+    "content": "다시 다 괜찮아질 거야"
+  },
+  {
+    "id": 331,
+    "used": false,
+    "content": "지금 지금 이대로도 괜찮아"
+  },
+  {
+    "id": 332,
+    "used": false,
+    "content": "정말 스스로를 칭찬해보자"
+  },
+  {
+    "id": 333,
+    "used": false,
+    "content": "진심으로 작은 기쁨을 느껴보자"
+  },
+  {
+    "id": 334,
+    "used": false,
+    "content": "오늘도 지금 있는 그대로 괜찮아"
+  },
+  {
+    "id": 335,
+    "used": false,
+    "content": "가볍게 지금 웃을 이유가 충분해"
+  },
+  {
+    "id": 336,
+    "used": false,
+    "content": "자연스럽게 작은 걸음이 큰 변화를"
+  },
+  {
+    "id": 337,
+    "used": false,
+    "content": "다시 나는 소중한 존재야"
+  },
+  {
+    "id": 338,
+    "used": false,
+    "content": "지금 오늘도 잘 해낼 거야"
+  },
+  {
+    "id": 339,
+    "used": false,
+    "content": "정말 힘들면 잠시 쉬어가도 돼"
+  },
+  {
+    "id": 340,
+    "used": false,
+    "content": "진심으로 멈춰도 괜찮아 다시 가면"
+  },
+  {
+    "id": 341,
+    "used": false,
+    "content": "오늘도 내 속도대로 가면 돼"
+  },
+  {
+    "id": 342,
+    "used": false,
+    "content": "가볍게 내가 나여서 다행이야"
+  },
+  {
+    "id": 343,
+    "used": false,
+    "content": "자연스럽게 나는 내 길을 가고 있어"
+  },
+  {
+    "id": 344,
+    "used": false,
+    "content": "다시 기회는 준비된 자의 것"
+  },
+  {
+    "id": 345,
+    "used": false,
+    "content": "지금 다 잘 될 거야"
+  },
+  {
+    "id": 346,
+    "used": false,
+    "content": "정말 마음이 가는 대로 해보자"
+  },
+  {
+    "id": 347,
+    "used": false,
+    "content": "진심으로 감사는 행복을 부른다"
+  },
+  {
+    "id": 348,
+    "used": false,
+    "content": "오늘도 오늘은 더 나아질 거야"
+  },
+  {
+    "id": 349,
+    "used": false,
+    "content": "가볍게 나는 나를 사랑할 거야"
+  },
+  {
+    "id": 350,
+    "used": false,
+    "content": "자연스럽게 나답게 사는 게 중요해"
+  },
+  {
+    "id": 351,
+    "used": false,
+    "content": "다시 매일 성장하는 중이야"
+  },
+  {
+    "id": 352,
+    "used": false,
+    "content": "지금 지금부터 다시 시작이야"
+  },
+  {
+    "id": 353,
+    "used": false,
+    "content": "정말 내 속도대로 살아갈래"
+  },
+  {
+    "id": 354,
+    "used": false,
+    "content": "진심으로 나는 이미 충분히 멋져"
+  },
+  {
+    "id": 355,
+    "used": false,
+    "content": "오늘도 한 번 더 도전해보자"
+  },
+  {
+    "id": 356,
+    "used": false,
+    "content": "가볍게 나아가는 중이니까 괜찮아"
+  },
+  {
+    "id": 357,
+    "used": false,
+    "content": "자연스럽게 하루하루가 기회야"
+  },
+  {
+    "id": 358,
+    "used": false,
+    "content": "다시 생각이 현실을 만든다"
+  },
+  {
+    "id": 359,
+    "used": false,
+    "content": "지금 지금 이 순간에 집중하자"
+  },
+  {
+    "id": 360,
+    "used": false,
+    "content": "정말 하루에 하나씩 이뤄내자"
+  },
+  {
+    "id": 361,
+    "used": false,
+    "content": "진심으로 내일은 오늘보다 나아"
+  },
+  {
+    "id": 362,
+    "used": false,
+    "content": "오늘도 포기하지 않으면 이겨"
+  },
+  {
+    "id": 363,
+    "used": false,
+    "content": "가볍게 나 자신을 믿어야 해"
+  },
+  {
+    "id": 364,
+    "used": false,
+    "content": "자연스럽게 작은 변화가 시작이야"
+  },
+  {
+    "id": 365,
+    "used": false,
+    "content": "다시 하루만 더 버텨보자"
+  },
+  {
+    "id": 366,
+    "used": false,
+    "content": "지금 괜찮아 잘하고 있어"
+  },
+  {
+    "id": 367,
+    "used": false,
+    "content": "정말 나는 충분히 가치 있어"
+  },
+  {
+    "id": 368,
+    "used": false,
+    "content": "진심으로 오늘도 나에게 박수"
+  },
+  {
+    "id": 369,
+    "used": false,
+    "content": "오늘도 실패는 과정일 뿐이야"
+  },
+  {
+    "id": 370,
+    "used": false,
+    "content": "가볍게 햇살처럼 밝게 살아보자"
+  },
+  {
+    "id": 371,
+    "used": false,
+    "content": "자연스럽게 내 선택을 믿어보자"
+  },
+  {
+    "id": 372,
+    "used": false,
+    "content": "다시 걱정보단 행동을 해보자"
+  },
+  {
+    "id": 373,
+    "used": false,
+    "content": "지금 기분 좋은 하루가 될 거야"
+  },
+  {
+    "id": 374,
+    "used": false,
+    "content": "정말 천천히 가도 괜찮아"
+  },
+  {
+    "id": 375,
+    "used": false,
+    "content": "진심으로 두려움보다 용기를 선택해"
+  },
+  {
+    "id": 376,
+    "used": false,
+    "content": "오늘도 행복은 가까이에 있어"
+  },
+  {
+    "id": 377,
+    "used": false,
+    "content": "가볍게 숨 쉬는 것도 충분히 잘한"
+  },
+  {
+    "id": 378,
+    "used": false,
+    "content": "자연스럽게 마음 먹은 대로 되는 거"
+  },
+  {
+    "id": 379,
+    "used": false,
+    "content": "다시 나를 응원해주는 사람 있어"
+  },
+  {
+    "id": 380,
+    "used": false,
+    "content": "지금 시간이 해결해줄 거야"
+  },
+  {
+    "id": 381,
+    "used": false,
+    "content": "정말 다 괜찮아질 거야"
+  },
+  {
+    "id": 382,
+    "used": false,
+    "content": "진심으로 지금 이대로도 괜찮아"
+  },
+  {
+    "id": 383,
+    "used": false,
+    "content": "오늘도 스스로를 칭찬해보자"
+  },
+  {
+    "id": 384,
+    "used": false,
+    "content": "가볍게 작은 기쁨을 느껴보자"
+  },
+  {
+    "id": 385,
+    "used": false,
+    "content": "자연스럽게 지금 있는 그대로 괜찮아"
+  },
+  {
+    "id": 386,
+    "used": false,
+    "content": "다시 지금 웃을 이유가 충분해"
+  },
+  {
+    "id": 387,
+    "used": false,
+    "content": "지금 작은 걸음이 큰 변화를"
+  },
+  {
+    "id": 388,
+    "used": false,
+    "content": "정말 나는 소중한 존재야"
+  },
+  {
+    "id": 389,
+    "used": false,
+    "content": "진심으로 오늘도 잘 해낼 거야"
+  },
+  {
+    "id": 390,
+    "used": false,
+    "content": "오늘도 힘들면 잠시 쉬어가도 돼"
+  }
+]

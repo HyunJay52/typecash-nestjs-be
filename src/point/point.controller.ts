@@ -1,34 +1,38 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Post, Body, UseGuards, Request } from '@nestjs/common';
 import { PointService } from './point.service';
-import { CreatePointDto } from './dto/create-point.dto';
-import { UpdatePointDto } from './dto/update-point.dto';
+import { RedeemDto } from './dto/point-request.dto';
+import { JwtAuthGuard } from '@/auth/guards/jwt-auth.guard';
+
+// todo : PointController
+// 1. 포인트 적립 API
+// 2. 포인트 사용 API
+// 3. 포인트 조회 API
+// 4. 포인트 내역 조회 API
 
 @Controller('point')
+@UseGuards(JwtAuthGuard)
 export class PointController {
-  constructor(private readonly pointService: PointService) {}
+    constructor(private readonly pointService: PointService) {}
 
-  @Post()
-  create(@Body() createPointDto: CreatePointDto) {
-    return this.pointService.create(createPointDto);
-  }
+    // 1. 포인트 적립 API - 광고 시청 후 포인트 적립
+    @Post('/ad-watch-reward')
+    async addRewardForAdWatch(@Request() req, @Body('amount') amount: number) {
+        // addPointDto에는 userId, 포인트 등 필요한 정보가 포함되어야 합니다.
+        console.log('addRewardForAdWatch called: ', req.user.id, amount);
+        return this.pointService.updateRewardForAdWatch({
+            userId: req.user.id,
+            amount,
+        });
+    }
 
-  @Get()
-  findAll() {
-    return this.pointService.findAll();
-  }
-
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.pointService.findOne(+id);
-  }
-
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updatePointDto: UpdatePointDto) {
-    return this.pointService.update(+id, updatePointDto);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.pointService.remove(+id);
-  }
+    // 2. 포인트 사용 API - 포인트로 상품권 교환 신청
+    @Post('redeem/giftcard')
+    async redeemPoints(
+        @Request() req,
+        @Body()
+        redeemDto: RedeemDto,
+    ) {
+        // redeemDto에는 userId, giftCardId, pointsToUse 등이 포함되어야 합니다.
+        return this.pointService.redeemPoints(req.user.id, redeemDto);
+    }
 }
