@@ -89,7 +89,8 @@ export class AuthService {
     // * Refresh token 재발급 : Long Lived JWT
     private async createRefreshToken(payload: { email: string; sub: number }) {
         const refreshToken = this.jwtService.sign(payload, {
-            expiresIn: '7d', // 7 days
+            // expiresIn: '7d', // 7 days
+            expiresIn: '10m',
         });
 
         // * save refresh token to the database
@@ -106,12 +107,14 @@ export class AuthService {
             where: { userId },
             update: {
                 refreshToken: hashedRefreshToken,
-                expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7일 후
+                // expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7일 후
+                expiresAt: new Date(Date.now() + 10 * 60 * 1000), // 10분 후
             },
             create: {
                 userId,
                 refreshToken: hashedRefreshToken,
-                expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+                // expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+                expiresAt: new Date(Date.now() + 10 * 60 * 1000), // 10분 후
             },
         });
 

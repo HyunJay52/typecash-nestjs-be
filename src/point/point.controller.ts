@@ -26,12 +26,13 @@ export class PointController {
     }
 
     // 2. 포인트 사용 API - 포인트로 상품권 교환 신청
-    @Post('redeem/giftcard')
+    @Post('/redeem/giftcard')
     async redeemPoints(
         @Request() req,
         @Body()
         redeemDto: RedeemDto,
     ) {
+        console.log('redeemPoints called: ', req.user.id, redeemDto);
         // redeemDto에는 userId, giftCardId, pointsToUse 등이 포함되어야 합니다.
         return this.pointService.redeemPoints(req.user.id, redeemDto);
     }
