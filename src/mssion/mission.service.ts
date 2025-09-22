@@ -320,6 +320,7 @@ export class MissionService {
     // * 유저 미션 현황 조회
     async getDailyMissionSummary(userId: number): Promise<DailyMissionSummary> {
         const availableHours = this.getAvailableHours();
+        // todo : utc to kts
         const currentHour = this.getCurrentHour();
 
         const today = new Date();
