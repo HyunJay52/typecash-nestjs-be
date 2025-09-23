@@ -1,0 +1,114 @@
+name: AWS ECR+EC2 CI/CD to Development
+
+on:
+    push:
+        branches:
+            - dev
+
+env:
+    AWS_REGION: ${{ secrets.AWS_REGION }}
+    ECR_REGISTRY: ${{ secrets.DEV_ECR_REGISTRY }}
+    ECR_REPOSITORY: ${{ secrets.DEV_ECR_REPOSITORY }}
+    PORT: ${{ secrets.PORT }}
+    IMAGE_TAG: ${{ github.sha }}
+    ENVIRONMENT: development
+
+jobs:
+    build:
+        name: Build and Push to DEV ECR
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: set ENV
+              run: |
+                  echo "NODE_ENV=${{ env.ENVIRONMENT }}" >> .env
+                  echo "PORT=${{ env.PORT }}" >> .env
+                  echo "DATABASE_URL=${{ secrets.DEV_DATABASE_URL }}" >> .env
+                  echo "NAVER_WORKS_ROOM_ID=${{ secrets.NAVER_WORKS_ROOM_ID }}" >> .env
+                  echo "NAVER_WORKS_LAMBDA_URL=${{ secrets.NAVER_WORKS_LAMBDA_URL }}" >> .env
+                  echo "NAVER_WORKS_API_KEY=${{ secrets.NAVER_WORKS_API_KEY }}" >> .env
+                  echo "SWAGGER_USERNAME=${{ secrets.SWAGGER_USERNAME }}" >> .env
+                  echo "SWAGGER_PASSWORD=${{ secrets.SWAGGER_PASSWORD }}" >> .env
+
+            - name: Configuration AWS credentials
+              uses: aws-actions/configure-aws-credentials@v2
+              with:
+                  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  aws-region: ${{ env.AWS_REGION }}
+
+            - name: Login to Amazon ECR
+              id: login-ecr
+              uses: aws-actions/amazon-ecr-login@v1
+
+            - name: Build, tag, and push image to Amazon ECR
+              id: build-image
+              env:
+                  ECR_REGISTRY: ${{ env.ECR_REGISTRY }}
+                  ECR_REPOSITORY: ${{ env.ECR_REPOSITORY }}
+                  IMAGE_TAG: ${{ env.IMAGE_TAG }}
+              run: |
+                  docker build -t ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }} .
+                  docker push ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}
+                  echo "image=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}" >> $GITHUB_OUTPUT
+
+    deploy:
+        needs: build
+        name: Deploy to DEV EC2
+        runs-on: ubuntu-latest
+        # runs-on: [self-hosted, label-for-space-tune-be-server]
+
+        steps:
+            - name: Configure AWS credentials
+              uses: aws-actions/configure-aws-credentials@v2
+              with:
+                  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  aws-region: ${{ env.AWS_REGION }}
+
+            - name: Login to Amazon ECR
+              id: login-ecr
+              uses: aws-actions/amazon-ecr-login@v1
+
+            - name: Pull image from Amazon DEV ECR and restart container
+              run: |
+                  docker pull ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ github.sha }}
+
+                  # Debug: Check if container exists
+                  if docker ps -a --format '{{.Names}}' | grep -q "^${{ env.ECR_REPOSITORY }}$"; then
+                    echo "Container ${{ env.ECR_REPOSITORY }} exists. Stopping and removing..."
+                    docker stop ${{ env.ECR_REPOSITORY }} || true
+                    docker rm ${{ env.ECR_REPOSITORY }} || true
+                  else
+                    echo "Container ${{ env.ECR_REPOSITORY }} does not exist."
+                  fi
+
+                  # docker stop ${{ env.ECR_REPOSITORY }}
+                  # docker rm ${{ env.ECR_REPOSITORY }}
+                  # docker run -d --name ${{ env.ECR_REPOSITORY }} -p 80:${{ env.PORT }} --restart unless-stopped ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}
+                  # echo "Container logs:"
+                  # docker logs ${{ env.ECR_REPOSITORY }}
+
+                  docker run -d \
+                    --name ${{ env.ECR_REPOSITORY}} \
+                    -p 80:${{ env.PORT }} \
+                    -e NODE_ENV=${{ env.ENVIRONMENT }} \
+                    -e PORT=${{ env.PORT }} \
+                    -e DATABASE_URL=${{ secrets.DEV_DATABASE_URL }} \
+                    --restart unless-stopped \
+                    ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}
+
+                  echo "Container logs:"
+                  docker logs ${{ env.ECR_REPOSITORY }}
+
+            # - name: Push ECR to EC2
+            #   run: |
+            #       ssh -o StrictHostKeyChecking=no -i ${{ secrets.SSH_KEY }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 'bash -s' < .github/scripts/deploy.sh
+
+            - name: Health check
+              run: |
+                  sleep 10
+                  curl http://localhost:80 || echo "Application is not responding"
